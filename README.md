@@ -86,6 +86,16 @@ on the cluster.
 
 ### Out
 
+Define type
+```yaml
+resource_types:
+- name: helm
+  source:
+    repository: konkerlabs/concourse-eks-helm3-resource
+    tag: latest
+  type: docker-image
+```
+
 Define the resource:
 
 ```yaml
