@@ -5,11 +5,6 @@ Deploy to [Kubernetes Helm](https://github.com/kubernetes/helm) from [Concourse]
 Forked and inspired by from linkyard/concourse-helm-resource.  
 Modified to support AWS authentication informing an account ( id and secret ) that has access to EKS cluster
 
-Quick fixed.
-
-## Dependency
-Need to add your .aws folder with proper credentials on root folder, if standard aws eks authentication is desired, store your container privately and not publishing it on public hub is strongly recomended.
-
 ## Installing
 
 Add the resource type to your pipeline:
