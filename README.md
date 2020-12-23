@@ -3,7 +3,7 @@
 Deploy to [Kubernetes Helm](https://github.com/kubernetes/helm) from [Concourse](https://concourse.ci/) using aws authenticator to support EKS clusters
 
 Forked and inspired by from linkyard/concourse-helm-resource.  
-Modified to support autogeneration of kubeconfig for AWS EKS and AWS STS AssumeRole.  
+Modified to support AWS authentication informing an account ( id and secret ) that has access to EKS cluster
 
 Quick fixed.
 
