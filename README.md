@@ -11,6 +11,12 @@ Add the resource type to your pipeline:
 
 ```yaml
 resource_types:
+- name: helm
+  source:
+    repository: konkerlabs/concourse-eks-helm3-resource
+    tag: latest
+  type: docker-image
+resources:
 - name: helm-eks-release
   source:
     aws_eks_cluster_name: EKS_NAME
