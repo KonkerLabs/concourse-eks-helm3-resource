@@ -112,7 +112,9 @@ helm_upgrade() {
   scrubbed_overridden_args=()
   set_overridden_values
   if [ -n "$wait_until_ready" ] && [ "$wait_until_ready" -gt "0" ]; then
-    non_diff_args+=("--wait" "--timeout" "$wait_until_ready")
+    # Add 's' to the seconds value
+    timeout_value="${wait_until_ready}s"  
+    non_diff_args+=("--wait" "--timeout" "$timeout_value")  
   fi
   if [ "$debug" = true ]; then
     upgrade_args+=("--debug")
